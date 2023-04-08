@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" lang="ru">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="form" method="post">
+        <div class="regForm">
+            <div class="regHeading">
+                <label>Введите свои данные</label>
+            </div>
+            <div class="regElement">
+                <label for="userSurame">Фамилия:</label>
+                <input type="text" id="userSurname" class="regInput" required>
+            </div>
+            <div class="regElement">
+                <label for="userFirstName">Имя:</label>
+                <input type="text" id="userFirstName" class="regInput" required>
+            </div>
+            <div class="regElement">
+                <label for="userPatronim">Отчество:</label>
+                <input type="text" id="userPatronim" class="regInput">
+            </div>
+            <div class="regElement">
+                <label for="userMail">Почта</label>
+                <input id="userMail" type="email" class="regInput" required>
+            </div>
+            <div class="regElement">
+                <label for="userPassword">Придумайте пароль:</label>
+                <input type="password" id="userPassword" class="regInput" required>
+            </div>
+            <div class="regButton">
+                <input type="submit" class="regButton" id="submitButton" value="Отправить">
+            </div>
+        </div>
+        <div class="regForm" id="regInfo"></div>
+    </form>
+    <a id="goBack" href="index.html">К начальной странице</a type="button">
+</body>
+<script src="jquery.min.js"></script>
+<script src="overlay.js" type="text/javascript"></script>
+<script src="signup_script.js" type="text/javascript"></script>
+
+</html>
